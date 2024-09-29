@@ -4058,6 +4058,17 @@ body.is-preload #sidebar nav ul li {
 	margin-left: 100px;
 }
 
+/* Mobile styles */
+@media (max-width: 767px) {
+  .picture-me img {
+    width: 100%;  /* Makes the image take the full width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes any space below the image */
+    margin: 0 auto; /* Centers the image if the container is wider than the image */
+  }
+}
+
+
 
 @media screen and (max-width: 980px) {
 

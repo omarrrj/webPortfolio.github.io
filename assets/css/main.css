@@ -4060,11 +4060,40 @@ body.is-preload #sidebar nav ul li {
 
 /* Mobile styles */
 @media (max-width: 767px) {
+  #intro {
+    padding: 20px; /* Add padding for better spacing on mobile */
+    text-align: center; /* Center the text for a more polished look */
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
   .picture-me img {
-    width: 100%;  /* Makes the image take the full width of its container */
-    height: auto; /* Maintains the aspect ratio */
-    display: block; /* Removes any space below the image */
-    margin: 0 auto; /* Centers the image if the container is wider than the image */
+    width: 100%; /* Make the image take full width on mobile */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .text-actions {
+    margin-top: 20px; /* Space between the image and text on mobile */
+    width: 100%; /* Ensure the text container uses full width */
+  }
+
+  .intro-text {
+    font-size: 1.2em; /* Adjust font size for better readability on mobile */
+    padding: 0 10px; /* Add some padding for better readability */
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center; /* Center the button */
+  }
+
+  .actions .button {
+    font-size: 1em; /* Adjust button size */
+    padding: 10px 20px; /* Adjust button padding for better touch targets */
   }
 }
 
